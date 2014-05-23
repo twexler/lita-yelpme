@@ -1,4 +1,5 @@
 # lita-yelpme
+[![Build Status](https://img.shields.io/travis/twexler/lita-yelpme/master.svg)](https://travis-ci.org/esigler/lita-pagerduty)
 
 TODO: Add a description of the plugin.
 
@@ -13,11 +14,20 @@ gem "lita-yelpme"
 
 ## Configuration
 
-TODO: Describe any configuration attributes the plugin exposes.
+lita-yelpme requires a Yelp API key. You can get from the [Yelp Developer Page](http://www.yelp.com/developers)
+
+Add the following variables to your Lita config file:
+
+``` ruby
+config.handlers.yelpme.consumer_secret = 'CONSUMER_SECRET'
+config.handlers.yelpme.consumer_key = 'CONSUMER_KEY'
+config.handlers.yelpme.token_key = 'TOKEN_KEY'
+config.handlers.yelpme.token_secret = 'TOKEN_SECRET'
+```
 
 ## Usage
 
-TODO: Describe the plugin's features and how to use them.
+``` yelp State Bird Provisions ```
 
 ## License
 
