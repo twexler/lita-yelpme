@@ -1,6 +1,6 @@
 # lita-yelpme
 [![Build Status](https://img.shields.io/travis/twexler/lita-yelpme/master.svg)](https://travis-ci.org/twexler/lita-yelpme)
-
+[![Coverage Status](https://img.shields.io/coveralls/twexler/lita-yelpme.svg)](https://coveralls.io/r/twexler/lita-yelpme?branch=master)
 
 ## Installation
 
