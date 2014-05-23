@@ -1,7 +1,6 @@
 # lita-yelpme
 [![Build Status](https://img.shields.io/travis/twexler/lita-yelpme/master.svg)](https://travis-ci.org/esigler/lita-pagerduty)
 
-TODO: Add a description of the plugin.
 
 ## Installation
 
