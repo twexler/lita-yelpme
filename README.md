@@ -1,5 +1,5 @@
 # lita-yelpme
-[![Build Status](https://img.shields.io/travis/twexler/lita-yelpme/master.svg)](https://travis-ci.org/esigler/lita-pagerduty)
+[![Build Status](https://img.shields.io/travis/twexler/lita-yelpme/master.svg)](https://travis-ci.org/twexler/lita-yelpme)
 
 
 ## Installation
