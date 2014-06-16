@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-yelpme"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["Ted"]
   spec.email         = ["ted@stuckinacan.com"]
   spec.description   = %q{A yelp handler for lita}
