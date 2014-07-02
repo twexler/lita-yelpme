@@ -3,10 +3,10 @@ require 'yelp'
 module Lita
   module Handlers
   class Yelpme < Handler
-  	route(/^(?:yelp|y)\s+([^@]+)/iu, :yelp, command: true, help: {
+  	route(/^(?:yelp|y)\s+([^@]+)$/iu, :yelp, command: true, help: {
       "yelp QUERY" => "Return the first Yelp result with information about the first business found"
     })
-    route(/^(?:yelp|y)\s+(.+)@\s(.*)/u, :yelp_city, command: true, help: {
+    route(/^(?:yelp|y)\s+(.+)@\s+(.*)/iu, :yelp_city, command: true, help: {
             "yelp QUERY @ CITY" => "Return the first Yelp result with information about the first business found"
                 })
     def self.default_config(handler_config)
