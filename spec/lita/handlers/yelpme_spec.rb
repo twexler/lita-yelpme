@@ -75,7 +75,7 @@ describe Lita::Handlers::Yelpme, lita_handler: true do
       }
       it "returns an error" do
         send_command("yelp fhaskjlfhaskfhdaskjlgflaskjhdalkhflaksjhfsa")
-        expect(replies.last).to eq("Cannot find any businesses in San Francisco matching fhaskjlfhaskfhdaskjlgflaskjhdalkhflaksjhfs")
+        expect(replies.last).to eq("Cannot find any businesses in San Francisco matching fhaskjlfhaskfhdaskjlgflaskjhdalkhflaksjhfsa")
       end
     end
   end
