@@ -20,7 +20,7 @@ Add the following variables to your Lita config file:
 ``` ruby
 config.handlers.yelpme.consumer_secret = 'CONSUMER_SECRET'
 config.handlers.yelpme.consumer_key = 'CONSUMER_KEY'
-config.handlers.yelpme.token_key = 'TOKEN_KEY'
+config.handlers.yelpme.token = 'TOKEN_KEY'
 config.handlers.yelpme.token_secret = 'TOKEN_SECRET'
 ```
 
