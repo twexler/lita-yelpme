@@ -8,9 +8,14 @@ module Lita
     })
     route(/^(?:yelp|y)\s+(.+)@\s+(.*)/iu, :yelp_city, command: true, help: {
             "yelp QUERY @ CITY" => "Return the first Yelp result with information about the first business found"
-                })
-    def self.default_config(handler_config)
-      handler_config.default_city = "San Francisco"
+    })
+
+    if Lita::VERSION.split('.')[0].to_i > 4 
+      config :default_city, default: "San Francisco"
+    else
+      def self.default_config(handler_config)
+        handler_config.default_city = "San Francisco"
+      end
     end
 
     def yelp(response)
@@ -24,6 +29,7 @@ module Lita
       end
       response.reply create_reply(config.default_city, query, yelp_response)
     end
+
     def yelp_city(response)
       query = response.matches[0][0]
       city = response.matches[0][1]

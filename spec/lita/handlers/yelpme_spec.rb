@@ -1,8 +1,8 @@
 require "spec_helper"
 
 describe Lita::Handlers::Yelpme, lita_handler: true do
-  it { routes_command('yelp state bird provisions').to(:yelp) }
-  it { routes_command('yelp original gravity @ san jose').to(:yelp_city) }
+  it { is_expected.to route_command('yelp state bird provisions').to(:yelp)}
+  it { is_expected.to route_command('yelp original gravity @ san jose').to(:yelp_city) }
 
   describe "without valid API keys" do
     it "returns an error when no api keys are defined" do
